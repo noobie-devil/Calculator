@@ -20,4 +20,4 @@ This is the source code of the calculator application project made while studyin
 
 ## Main Layout
 
-![App Screenshot](https://imgur.com/a/gznYxHE)
+![App Screenshot](https://imgur.com/tyBZ6Ag)
