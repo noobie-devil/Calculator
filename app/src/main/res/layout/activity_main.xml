@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_overview"
+        android:background="@color/colorMainBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/layout_textview"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <hcmute.edu.vn.calculator_18.RightAlignedHorizontalScrollView
+                android:id="@+id/layout_scrollview_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:scrollbars="none"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:id="@+id/text_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:height="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:hint="@string/string_screen_hint"
+                    android:paddingRight="15dp"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="88sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </hcmute.edu.vn.calculator_18.RightAlignedHorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_below="@+id/layout_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_button_row_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="Suspicious0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_seven"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_seven"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize"
+                    tools:ignore="NestedWeights" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_eight"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/string_eight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_nine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_nine"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_div"
+                    android:background="@drawable/secondary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/string_div"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_button_row_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="Suspicious0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_four"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_four"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize"
+                    tools:ignore="NestedWeights" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_five"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_five"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_six"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_six"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_mul"
+                    android:background="@drawable/secondary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/string_mul"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_button_row_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="Suspicious0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_one"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize"
+                    tools:ignore="NestedWeights" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_three"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_sub"
+                    android:background="@drawable/secondary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/string_sub"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_button_row_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="Suspicious0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_zero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:text="@string/string_zero"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize"
+                    tools:ignore="NestedWeights" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_dot"
+                    android:background="@drawable/primary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/string_dot"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_add"
+                    android:background="@drawable/secondary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/string_add"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_button_row_5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="Suspicious0dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_clear"
+                    android:background="@drawable/secondary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/string_clear"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize"
+                    tools:ignore="NestedWeights" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_equal"
+                    android:background="@drawable/secondary_btn_bg"
+                    android:fontFamily="serif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="@string/string_equal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/calcButtonTextSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
