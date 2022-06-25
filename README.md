@@ -11,6 +11,7 @@ This is the source code of the calculator application project made while studyin
 ## Technologies
 
 **Programming Language:** Java
+
 **IDE:** Android Studio
 
 ## Collaborators
