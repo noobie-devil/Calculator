@@ -17,7 +17,7 @@ This is the source code of the calculator application project made while studyin
 ## Collaborators
 
 - [@truongnguyenvan8801](https://github.com/truongnguyenvan8801) - truongnguyenvan8801@gmail.com
-- [@Vinh-san](https://github.com/Vinh-san) - 19110042@student.hcmute.edu.vn
+- [@Vinh-san](https://github.com/Vinh-san) - ngvinh0109@gmail.com
 
 ## Main Layout
 
